@@ -19,20 +19,21 @@ Use these as defaults unless Mikhail overrides them in the current request.
 
 ## Evidence and tone
 
-- Recover exact measurements from Git and CI history when available, especially before/after pipeline duration. Do not rely on remembered numbers if they can be checked.
-- It is acceptable to say that checks or complexity increased while total execution time decreased; this often makes an optimization more credible.
+- Recover exact measurements from Git history, CI runs, monitoring, benchmarks, or other primary evidence when available. Do not rely on remembered numbers if they can be checked.
+- Preserve relevant constraints around a measurement—for example, execution time decreasing while checks or implementation complexity increased—because they often make an optimization more credible.
 - Avoid inflated business impact, unsupported percentages, and ceremonial adjectives.
-- Preserve concrete implementation constraints, unusual failure modes, and debugging discoveries when they distinguish the work from routine DevOps responsibilities.
+- Preserve concrete implementation constraints, unusual failure modes, and debugging discoveries when they distinguish the work from routine responsibilities.
 - Keep the tone direct and professional rather than corporate or self-congratulatory.
 
 ## Relevance and privacy
 
-- For the DevOps resume, production delivery, infrastructure, observability, incident debugging, and reliability outrank application-only features.
-- Data consistency or backend mechanisms can appear when they demonstrate operational reliability, but should not displace stronger DevOps/SRE achievements.
+- Let the target role and vacancy determine priority. Do not default to DevOps positioning.
+- For PHP/backend resumes, treat product and domain ownership, architecture, APIs, databases, data consistency, asynchronous processing, performance, testing, and production reliability as core evidence rather than secondary implementation detail.
+- Include CI/CD, infrastructure, observability, and incident debugging when they strengthen the intended positioning or show end-to-end ownership, not merely because they sound more operational.
 - Avoid disclosing the specific interview-analysis project or its content. When needed, describe the safe functional domain, for example processing calls, and omit sensitive product identifiers.
 - Preserve exact technology names confirmed by Mikhail. In the current body of work, OpenSearch must not be rewritten as Elasticsearch.
 
 ## Language
 
-- Match the language of the resume. For a Russian resume, keep established technical terms when they are clearer or better for matching: pipeline, deployment, runners, consumers, reconciliation, fallback transport, trace, and similar terms.
+- Match the language of the resume. For a Russian resume, keep established technical terms when they are clearer or better for matching: pipeline, deployment, consumer, reconciliation, fallback transport, trace, query, cache, and similar terms.
 - Do not translate technical vocabulary merely to make the text uniformly Russian when that reduces precision.

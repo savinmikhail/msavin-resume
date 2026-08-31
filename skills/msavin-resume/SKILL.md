@@ -1,6 +1,6 @@
 ---
 name: msavin-resume
-description: Create, review, and iteratively edit Mikhail Savin's technical resumes for DevOps/SRE and PHP roles. Use for resume drafting, evidence-backed achievement rewriting, ATS/LLM matching, vacancy tailoring, or committing approved resume changes.
+description: Create, review, and iteratively edit Mikhail Savin's technical resumes for software engineering roles. Use for resume drafting, evidence-backed achievement rewriting, ATS/LLM matching, vacancy tailoring, or committing approved resume changes.
 ---
 
 # MSavin Resume
@@ -21,23 +21,15 @@ Read [references/preferences.md](references/preferences.md) before proposing wor
 
 Prioritize achievements by the target role rather than by implementation difficulty alone.
 
-For DevOps/SRE resumes, prefer:
-
-1. delivery platforms and measurable CI/CD improvements;
-2. production observability and incident response;
-3. reliability, recovery, capacity, and resource protection;
-4. infrastructure automation, Kubernetes, containers, registries, and configuration management;
-5. security and operational controls.
-
-Keep backend or product work only when it demonstrates systems thinking relevant to the target role, such as data consistency, asynchronous processing, failure recovery, or production ownership. Otherwise reserve it for the PHP resume.
+Rank evidence against the actual vacancy and desired positioning. For PHP/backend roles, product and domain ownership, architecture, data modeling and consistency, APIs, asynchronous processing, database and application performance, testing, and production reliability are first-class achievements. Do not treat infrastructure work as inherently stronger than backend work; include it when it supports the target role or demonstrates meaningful production ownership.
 
 ## Write achievements, not inventories
 
-- Use an implicit STAR structure: operational problem or constraint, the candidate's specific action, then an observable result. Do not add literal `Situation`, `Task`, `Action`, or `Result` labels.
+- Use an implicit STAR structure: problem or constraint, the candidate's specific action, then an observable result. Do not add literal `Situation`, `Task`, `Action`, or `Result` labels.
 - Lead with the outcome or ownership. Preserve the failure mode, scale, mechanism, and technical choices that make the claim distinguishable from generic resume language.
 - Name relevant technologies naturally for search matching, but do not create a keyword dump.
 - Prefer precise verbs such as `построил`, `сократил`, `выявил`, `стабилизировал`, `автоматизировал`, or `устранил` over vague claims such as `занимался` or `улучшил`.
-- Do not force a number into every bullet. A verified operational result—automatic recovery, bounded inconsistency, earlier detection, removal of manual work, or prevention of cross-environment processing—is valid when no honest business metric exists.
+- Do not force a number into every bullet. A verified result—reduced latency, bounded inconsistency, automatic recovery, fewer manual steps, safer delivery, or removal of a recurring failure mode—is valid when no honest business metric exists.
 - Ensure every sentence is interview-defensible: the candidate should be able to explain the original failure, constraints, implementation, tradeoffs, and validation.
 
 ## Work one decision at a time
