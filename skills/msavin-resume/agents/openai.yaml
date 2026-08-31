@@ -1,0 +1,4 @@
+interface:
+  display_name: "MSavin Resume"
+  short_description: "Review and refine technical resumes iteratively"
+  default_prompt: "Use $msavin-resume to review my current resume and improve one achievement at a time."
