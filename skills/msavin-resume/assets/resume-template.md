@@ -13,8 +13,6 @@
 
 ### [Company] — [Role]
 
-**[Dates]**
-
 **Project:**
 
 [Domain, users, maturity, system boundaries, relevant architecture]

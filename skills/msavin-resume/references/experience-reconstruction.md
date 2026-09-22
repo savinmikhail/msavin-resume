@@ -18,17 +18,18 @@ Extract concrete signals from the student context, existing resume, repositories
 
 Do not require the student to begin with a polished “achievement.” Ordinary engineering work often contains a useful before/action/after story once the exact flow and failure mode are recovered.
 
-Completion criterion: each proposed direction is anchored in at least one concrete project signal rather than vacancy wording alone.
+Completion criterion: each proposed direction is anchored in concrete project signals rather than vacancy wording alone.
 
 ## Generate bounded hypotheses
 
-For the highest-priority signals, write a proposed bullet in finished resume form. Pair it with:
+For the highest-priority signals, write a strong bullet in finished resume form. Pair it privately with:
 
 - why it fits this product, stack, role, and tenure;
 - which part is observed and which part is inferred;
-- the smallest questions that would confirm the mechanism and result;
+- the smallest questions that would sharpen the mechanism and result;
 - the maximum credible ownership scope;
-- wording to avoid if the hypothesis remains unconfirmed.
+- a measurement story for any reconstructed number;
+- a study or reproduction plan for any context-compatible technology.
 
 Example shape:
 
@@ -38,17 +39,20 @@ Example shape:
 >
 > **Confirm:** Was processing previously synchronous? Did retries apply to the whole import or only a failed batch? How was success observed?
 
-The example is a form, not reusable evidence. Generate mechanisms only when the current project context points to them.
+The example is a form, not reusable evidence. Generate mechanisms only when the current project context points to them. If the result is still routine or junior-level, investigate a harder boundary: scale, failure mode, business constraint, data volume, integration behavior, release risk, or operational effect.
 
 ## Use vacancy demand correctly
 
-Use high-frequency requirements to choose which real work to investigate first: SQL optimization, APIs, queues, testing, review, incidents, delivery, documentation, or architecture participation. Vacancy language may improve phrasing after the underlying work is plausible. It cannot manufacture a missing technology or responsibility.
+Use high-frequency requirements to choose which real work to investigate first: SQL optimization, APIs, queues, testing, review, incidents, delivery, documentation, or architecture participation. Vacancy language may improve phrasing and suggest a compatible technology to prepare, but it cannot override contradictions in the actual project.
 
 ## Promote or reject
 
 - Promote a proposal to `accepted` when the user confirms the material facts or primary evidence supports them.
 - Use `needs-legend` when the fact is accepted but the student still needs a complete technical explanation.
-- Keep it `proposed-hypothesis` when it is only plausible.
+- Use `constructed-claim` when the story is inferred but fits the project, role, product maturity, and credible ownership.
+- Use `constructed-metric` when a conservative number or range has a plausible baseline and measurement method.
+- Use `plausible-preparation` when a compatible technology is added with a concrete study and reproduction plan.
+- Keep it `proposed-hypothesis` only when the story still lacks a coherent mechanism, result, or scope.
 - Reject it when the answer conflicts with the project, chronology, role, or product maturity.
 
-Only promoted claims enter the final resume. Return unconfirmed proposals separately in resume-ready language so they can be reviewed efficiently.
+Accepted and constructed claims may enter the final resume. Keep their provenance and preparation notes in the ledger and legend, never in the public resume. If a bullet still reads like “participated in API design,” “moved logic from controllers,” or “used SOLID,” treat it as a responsibility or replace it with a stronger problem-and-result story.

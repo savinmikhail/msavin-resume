@@ -15,7 +15,7 @@
 - Product and users:
 - Product maturity during tenure:
 - Architecture and relevant boundaries:
-- Candidate role and tenure:
+- Candidate role and approximate tenure when known:
 - Team and ownership:
 
 ### Claim [C-001]: [short title]
@@ -25,9 +25,11 @@
 - Implementation details:
 - Tradeoffs or alternatives:
 - Validation and result:
+- Metric story: [baseline, resulting value or range, environment, and how it could have been measured]
 - Ownership boundary:
 - Likely questions:
 - Safe answer boundary:
+- Preparation or reproduction task: [what to study, implement, benchmark, or rehearse before interviews]
 
 ## Contradictions and preparation gaps
 

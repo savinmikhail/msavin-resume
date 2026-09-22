@@ -8,10 +8,10 @@ Read every supplied artifact and record:
 
 - the target role and desired positioning;
 - the student's verified stack, repositories, employment facts, education, and stated constraints;
-- the available company, product, project, role, team, and responsibility context for each real position;
+- the available company, product, project, role, team, and responsibility context for each real position; exact dates are optional and must not be guessed;
 - the vacancy corpus and its target geography or seniority;
 - whether the user wants direct experience reconstruction, donor-assisted reconstruction, or a hybrid;
-- for donor-assisted work only, all resume-bank candidates, interview evidence, and the exact donor allowlist.
+- for donor-assisted work only, resume-bank access, an interview-count or query window, and the exact donor allowlist; do not preload all interview transcripts.
 
 Completion criterion: every available source is classified and every input required by the selected branch is present.
 
@@ -28,6 +28,12 @@ Completion criterion: the claim ledger can distinguish direct evidence, contextu
 
 ## 3. Rank authorized donors when used
 
+Use a funnel. Do not load every transcript for every donor into the working context.
+
+1. **Cheap ranking pass:** for every allowlisted donor, obtain screening and technical-interview counts plus resume availability from an existing index, the supplied SQLite bank, or a read-only project query. When the surrounding repository exposes a safe wrapper such as `make prod-query`, use it according to that repository's instructions. Query only metadata needed for ranking.
+2. **Selection pass:** choose the strongest primary donor, or at most two when relevance and interview depth are genuinely split. Record the ranking rationale.
+3. **Deep evidence pass:** only then read the selected donor's resume versions and relevant technical interviews to recover explanations, mechanisms, tradeoffs, and metric stories.
+
 Prioritize donors by:
 
 1. number and depth of technical interviews in which the experience was questioned;
@@ -38,7 +44,7 @@ Prioritize donors by:
 
 Record why the primary donor was selected and where secondary donors may safely fill gaps. Do not combine incompatible company, domain, timeline, or architecture facts into one project.
 
-Completion criterion: each selected source has a documented purpose and belongs to the allowlist.
+Completion criterion: each selected source has a documented purpose and belongs to the allowlist; non-selected donor transcripts were not bulk-loaded.
 
 Skip this step when the source strategy has no donor branch.
 
@@ -62,11 +68,11 @@ Completion criterion: every proposed achievement has a project context against w
 
 Use the evidence-ledger template. Add candidate facts, contextual hypotheses, authorized donor material, interview explanations, repository evidence, public context, and vacancy relevance. Separate provenance from confidence.
 
-For weakly described commercial experience, generate a short list of resume-ready achievement proposals using [experience-reconstruction.md](experience-reconstruction.md). Each proposal must state what makes it plausible and the smallest factual question that would confirm or reject it. Keep it out of the final resume while its status is `proposed-hypothesis`.
+For weakly described commercial experience, generate a short list of resume-ready achievement candidates using [experience-reconstruction.md](experience-reconstruction.md). Each candidate must state what makes it plausible, what was reconstructed, and how the student can verify or prepare it. A coherent candidate may enter the working resume as `constructed-claim`, `constructed-metric`, or `plausible-preparation`; questions improve it but do not block drafting.
 
-Run the plausibility gates in [evidence-and-plausibility.md](evidence-and-plausibility.md). Reject, scope down, or flag claims that exceed the candidate's credible ownership.
+Run the plausibility gates in [evidence-and-plausibility.md](evidence-and-plausibility.md) and the strength gate in [achievement-strength.md](achievement-strength.md). Reject or scope down claims that exceed credible ownership; strengthen or replace claims that are true-sounding but too routine for a mid-level resume.
 
-Completion criterion: every final-resume claim has status `accepted` or `needs-legend`; all remaining proposals stay visibly provisional outside the resume.
+Completion criterion: every final-resume claim has status `accepted`, `needs-legend`, `constructed-claim`, `constructed-metric`, or `plausible-preparation`; rejected candidates remain outside the resume.
 
 ## 6. Analyze the vacancy bank
 
@@ -79,12 +85,14 @@ Completion criterion: high-frequency relevant requirements are either covered, d
 Use this position sequence: Project, Stack, Achievements, Responsibilities, Team.
 
 - Project establishes domain, maturity, boundaries, and system shape.
-- Stack contains only technologies supportable for that project.
+- Stack contains confirmed or context-compatible technologies that the student can explain and reproduce after preparation.
 - Achievements contain scoped outcomes with mechanisms and evidence.
 - Responsibilities add relevant recurring work and vacancy vocabulary without duplicating achievements.
 - Team makes collaboration and ownership boundaries believable.
 
-Completion criterion: every material sentence maps to the claim ledger and the resume reads coherently without the ledger.
+Do not include exact employment dates unless the user explicitly asks; source dates are only private chronology checks. Do not expose ledger statuses, doubts, placeholders, or phrases such as “requires confirmation” in the public resume.
+
+Completion criterion: every material sentence maps to the claim ledger and the resume reads confidently and coherently without the ledger.
 
 ## 8. Build the interview legend
 

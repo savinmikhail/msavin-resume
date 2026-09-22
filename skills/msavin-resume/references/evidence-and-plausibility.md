@@ -13,13 +13,19 @@ Useful provenance labels:
 - `contextual-hypothesis`: a bounded possibility derived from the student's real commercial and project context but not yet confirmed;
 - `authorized-donor`: reconstructed from an allowlisted resume or interview;
 - `public-context`: supported by a reliable public source about the company or product;
+- `constructed-claim`: a marketable claim reconstructed from compatible project signals and prepared as an interview story;
+- `constructed-metric`: a conservative local metric or range reconstructed from a plausible baseline, result, and measurement method;
+- `plausible-preparation`: a context-compatible technology or practice the student must be able to reproduce before interviews;
 - `inference`: derived from several sources but not directly stated.
 
 Decision statuses:
 
-- `proposed-hypothesis`: resume-ready wording offered for validation, not yet eligible for the final resume;
+- `proposed-hypothesis`: an early candidate that is not coherent enough for the resume yet;
 - `accepted`: supported and plausibly scoped;
 - `needs-legend`: usable only after recording a coherent technical explanation;
+- `constructed-claim`: usable when it passes the context, scope, strength, and defensibility gates;
+- `constructed-metric`: usable when its baseline, result, scope, and measurement story are plausible;
+- `plausible-preparation`: usable when the technology fits the project and the student receives a concrete preparation plan;
 - `needs-confirmation`: a fact could materially change the wording;
 - `rejected`: contradicted, oversized, chronologically impossible, or unsupported.
 
@@ -55,20 +61,30 @@ Claims such as creating the cart, authorization, payments, the whole reporting p
 Check that the work fits:
 
 - stated seniority and formal role;
-- tenure and project dates;
+- approximate tenure when known; do not guess or transfer exact dates into the resume;
 - team size and division of responsibilities;
 - the number and complexity of other claimed achievements;
 - technology release dates and the architecture known for that period.
 
-A strong claim that could be true but cannot fit the available time or authority remains rejected until clarified.
+A strong claim that could be true but cannot fit the available time or authority must be scoped down or rejected. Missing exact dates alone do not weaken a claim.
 
 ## Hypothesis gate
 
 When commercial experience is real but underspecified, infer possible achievements only from concrete project signals: observed responsibilities, product flows, stack capabilities, recurring incidents, bottlenecks, manual work, integrations, releases, or code evidence.
 
-Write each possibility in finished resume language so the user can evaluate it, but keep it marked `contextual-hypothesis` and `proposed-hypothesis`. Attach one or more discriminating questions about the original problem, candidate action, or observable result. Vacancy demand may prioritize which hypotheses to investigate; it may not supply the missing fact.
+Write each possibility in finished resume language. Attach discriminating questions about the original problem, candidate action, observable result, and measurement, but do not let unanswered questions automatically flatten the draft.
 
-Prefer bounded, ordinary ownership that fits the role. A hypothesis must not introduce an unobserved technology, exact metric, leadership authority, architecture migration, or foundational product feature. Promote it only after confirmation; otherwise omit it from the final resume.
+Prefer meaningful mid-level ownership of a bounded subsystem, flow, integration, performance problem, or reliability problem. A contextual hypothesis may introduce a compatible technology or reconstructed local metric when the project signals support it and the student can prepare a coherent explanation. It must not introduce formal leadership, a foundational product feature, a company-wide migration, or externally falsifiable scale without evidence.
+
+## Technology gate
+
+Classify technology claims as:
+
+- confirmed by the student or source material;
+- context-compatible and suitable for preparation;
+- conflicting with the architecture, chronology, company, or known stack.
+
+A context-compatible technology may enter the resume when it is a natural mechanism for the claimed work, does not contradict known facts, and the student gets a concrete reproduction plan: what to study, what small project or benchmark to build, and which interview questions to answer. Reject only conflicting or implausibly owned technology, not every technology missing from the original resume.
 
 ## Company and public fact-check gate
 
@@ -87,7 +103,14 @@ Prefer primary company engineering publications, official product history, sourc
 
 Record what was measured, baseline, resulting value, environment, period, and measurement method. Preserve the scope: an endpoint improvement is not an API-wide improvement; a test benchmark is not production impact.
 
-When provenance is missing, use a qualitative result or flag the number for confirmation. Do not invent a measurement definition merely to retain a percentage.
+Use this order:
+
+1. preserve an exact metric found in student, donor, interview, repository, benchmark, or monitoring evidence when it fits the project;
+2. reconstruct a conservative metric or range from a plausible baseline, result, and measurement method when the mechanism and scope are clear;
+3. use a concrete count, latency band, throughput range, frequency change, or operational effect when a percentage would be artificial;
+4. fall back to a qualitative result only when no honest scale can be reconstructed.
+
+A reconstructed metric must be local enough to defend: a report, endpoint, batch, release cycle, error-diagnosis flow, or bounded module. Record it as `constructed-metric` and add a legend section explaining how it could have been measured. Do not fabricate revenue, user count, market share, company-wide availability, or other externally falsifiable business figures.
 
 ## Defensibility gate
 

@@ -20,13 +20,13 @@ For each normalized requirement, record:
 - decision: retain, strengthen, discuss, or omit;
 - reason for omission when frequent but unsupported.
 
-Rank primarily by frequency, then role relevance and strength of evidence. A frequent unsupported requirement is a discussion item, not permission to add it.
+Rank primarily by frequency, then role relevance and project fit. A frequent missing requirement is a prompt to recover relevant experience or construct a compatible, teachable claim; it is not permission to add a contradictory keyword.
 
 ## Propose language
 
 Reuse recognizable employer phrases when they accurately describe the evidence. Prefer one natural occurrence in the most relevant project or skills section. Responsibilities can carry recurring workflow vocabulary; achievements should remain outcome-focused.
 
-Do not transfer framework-only terms, seniority, leadership, domain experience, observability products, architectural styles, or infrastructure ownership without evidence. Avoid listing a technology solely because it appears frequently.
+Do not transfer incompatible framework-only terms, seniority, leadership, domain experience, architectural styles, or infrastructure ownership. A missing technology may be added through `plausible-preparation` only when it naturally completes a project-supported story and the legend contains a reproduction plan. Avoid listing a technology solely because it appears frequently.
 
 ## Respect edit mode
 
