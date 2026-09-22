@@ -1,39 +1,46 @@
 # Mikhail's resume collaboration preferences
 
-Use these as defaults unless Mikhail overrides them in the current request.
+Use these defaults unless Mikhail overrides them in the current request.
 
 ## Decision process
 
-- Work through one achievement at a time. Discuss it, correct the facts, obtain acceptance, edit it, and commit it separately.
-- Do not ask Mikhail to evaluate many achievements or a large rewrite simultaneously.
-- When he says a formulation is good and asks to add or commit it, use that wording as the decision and proceed without reopening settled choices.
-- Corrections from Mikhail override inferences from code, previous resumes, or earlier drafts.
+- For a new resume or an explicitly requested batch rewrite, complete the workflow stage by stage: source inventory, source-strategy selection, project dossier, claim ledger, plausibility review, vacancy gap analysis, draft, legend, and validation.
+- For focused iteration, work through one achievement or decision at a time: discuss it, correct facts, obtain acceptance, edit it, and validate it.
+- When Mikhail requests analysis or discussion only, do not edit the resume.
+- When he accepts a formulation and asks to add it, proceed without reopening settled wording.
+- Mikhail's direct corrections override inferences from repositories, previous resumes, donor material, or interviews.
+
+## Sources and authorization
+
+- Prefer reconstructing the student's actual commercial experience when enough project context exists, even when the original description is weak.
+- Use donor material as an optional source branch, not the default.
+- Use only donors in the explicit allowlist for the current student.
+- Rank authorized donors primarily by the amount and depth of recoverable technical-interview evidence, then by role relevance and internal consistency.
+- Keep student facts, donor-derived reconstruction, public company facts, and inference visibly distinct in the working claim ledger.
+- Treat donor authorization as permission to inspect and adapt a source, not as proof that every donor claim fits the student.
+- Present context-derived possibilities in polished resume wording, but label them as hypotheses until confirmed.
 
 ## Audience and detail
 
-- Treat ATS and LLM-based screening as first-class audiences. Technical detail and relevant terminology are useful when they make the achievement more searchable and more credible.
-- Do not optimize mechanically for the shortest possible resume or an arbitrary one-page limit.
-- Still support diagonal human reading: put the point of the achievement early, keep one coherent story per bullet, and remove details that do not prove the result.
-- Prefer a detailed, technically defensible achievement over generic wording such as “настроил pipeline” or “ускорил deployment.”
-- Use implicit STAR. The text should show what was wrong, what Mikhail changed, and what became better without sounding like a behavioral-interview template.
+- Treat ATS and LLM-based screening as first-class audiences.
+- Do not optimize mechanically for one page. Preserve useful technical detail while supporting diagonal reading.
+- Prefer technically defensible specifics over generic claims.
+- Use implicit STAR without literal behavioral-interview labels.
 
 ## Evidence and tone
 
-- Recover exact measurements from Git history, CI runs, monitoring, benchmarks, or other primary evidence when available. Do not rely on remembered numbers if they can be checked.
-- Preserve relevant constraints around a measurement—for example, execution time decreasing while checks or implementation complexity increased—because they often make an optimization more credible.
-- Avoid inflated business impact, unsupported percentages, and ceremonial adjectives.
-- Preserve concrete implementation constraints, unusual failure modes, and debugging discoveries when they distinguish the work from routine responsibilities.
-- Keep the tone direct and professional rather than corporate or self-congratulatory.
+- Recover exact measurements from primary evidence when available. Otherwise use defensible qualitative outcomes.
+- Preserve constraints and failure modes that make an achievement credible.
+- Match ownership verbs to evidence and organizational scope.
+- Keep the tone direct and professional.
 
 ## Relevance and privacy
 
-- Let the target role and vacancy determine priority. Do not default to DevOps positioning.
-- For PHP/backend resumes, treat product and domain ownership, architecture, APIs, databases, data consistency, asynchronous processing, performance, testing, and production reliability as core evidence rather than secondary implementation detail.
-- Include CI/CD, infrastructure, observability, and incident debugging when they strengthen the intended positioning or show end-to-end ownership, not merely because they sound more operational.
-- Avoid disclosing the specific interview-analysis project or its content. When needed, describe the safe functional domain, for example processing calls, and omit sensitive product identifiers.
-- Preserve exact technology names confirmed by Mikhail. In the current body of work, OpenSearch must not be rewritten as Elasticsearch.
+- Let the target role and vacancy bank determine priority. Do not default to DevOps positioning for backend roles.
+- Keep sensitive project details generic when requested.
+- Preserve exact confirmed technology names; do not silently substitute adjacent products or frameworks.
 
 ## Language
 
-- Match the language of the resume. For a Russian resume, keep established technical terms when they are clearer or better for matching: pipeline, deployment, consumer, reconciliation, fallback transport, trace, query, cache, and similar terms.
-- Do not translate technical vocabulary merely to make the text uniformly Russian when that reduces precision.
+- Match the resume language.
+- In Russian resumes, retain established technical terms when they improve precision or search matching.

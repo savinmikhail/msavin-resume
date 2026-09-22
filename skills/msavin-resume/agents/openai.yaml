@@ -1,4 +1,4 @@
 interface:
   display_name: "MSavin Resume"
-  short_description: "Review and refine technical resumes iteratively"
-  default_prompt: "Use $msavin-resume to review my current resume and improve one achievement at a time."
+  short_description: "Reconstruct credible technical resume experience"
+  default_prompt: "Use $msavin-resume to reconstruct or review a technical resume from student, project, and vacancy context, optionally using authorized donor material."
